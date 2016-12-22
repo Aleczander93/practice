@@ -52,3 +52,26 @@
 // console.log(multipleValues.length);
 //
 // var reversedValues = multipleValues.reverse();
+
+// var today = new Date();
+// var y2k = new Date(2000, 0 , 1);
+// today.getMonth();
+// today.getFullYear();
+//
+// console.log( 'new year on:', today.getDay());
+
+var player = new Object();
+player.name = 'fred';
+player.score = 100;
+player.rank = 3;
+
+var player1 = { name: 'Alec', score: 1000, rank:1};
+
+function playerDetails() {
+  console.log(this.name + ' has a rank of:' + this.rank +'and a score of' + this.score);
+}
+
+player.logDetails = playerDetails;
+player1.logDetails = playerDetails;
+
+player1.logDetails();
