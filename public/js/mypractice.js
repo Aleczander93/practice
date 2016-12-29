@@ -60,18 +60,31 @@
 //
 // console.log( 'new year on:', today.getDay());
 
-var player = new Object();
-player.name = 'fred';
-player.score = 100;
-player.rank = 3;
+// var player = new Object();
+// player.name = 'fred';
+// player.score = 100;
+// player.rank = 3;
+//
+// var player1 = { name: 'Alec', score: 1000, rank:1};
+//
+// function playerDetails() {
+//   console.log(this.name + ' has a rank of:' + this.rank +'and a score of' + this.score);
+// }
+//
+// player.logDetails = playerDetails;
+// player1.logDetails = playerDetails;
+//
+// player1.logDetails();
 
-var player1 = { name: 'Alec', score: 1000, rank:1};
+// var myNavBar = document.getElementsByTagName('navigation');
+// console.log('links: ', myNavBar.length);
+//
+// console.log('this is an element of type: ', myNavBar.nodeType);
+// console.log('the Inner HTML is ' , myNavBar.innerHTML);
+// console.log('Child Nodes:', myNavBar.childNodes.length);
 
-function playerDetails() {
-  console.log(this.name + ' has a rank of:' + this.rank +'and a score of' + this.score);
-}
-
-player.logDetails = playerDetails;
-player1.logDetails = playerDetails;
-
-player1.logDetails();
+//needs work!
+var newParagraph = document.createElement('p');
+var paraText = document.createTextNode('some text for my practice');
+newParagraph.appendChild(paraText);
+document.getElementById(paragraph).appendChild(newParagraph);
