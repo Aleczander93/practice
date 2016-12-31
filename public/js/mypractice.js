@@ -83,8 +83,46 @@
 // console.log('the Inner HTML is ' , myNavBar.innerHTML);
 // console.log('Child Nodes:', myNavBar.childNodes.length);
 
-//needs work!
-var newParagraph = document.createElement('p');
-var paraText = document.createTextNode('some text for my practice');
-newParagraph.appendChild(paraText);
-document.getElementById(paragraph).appendChild(newParagraph);
+//needs help!!!!
+// var newParagraph = document.createElement('p');
+// var paraText = document.createTextNode('some text for my practice');
+// newParagraph.appendChild(paraText);
+// document.getElementById(paragraph).appendChild(newParagraph);
+
+
+//event handlers
+// home.onclick = function() {
+// };
+// document.addEventListener('onHover', myfunction, false);
+
+// document.onclick = function() {
+//   alert("you clicked a thing");
+// };
+
+// function prepareEventHandlers() {
+//   var homeNav = document.getElementById("home");
+//   homeNav.onClick = function() {
+//     alert('you clicked home');
+//   };
+// }
+
+// function simpleMessage() {
+//   alert('I set timeout message');
+// }
+// setTimeout(simpleMessage, 3000);
+
+//changing an image
+// var myImage = document.getElementById('mainImage');
+//
+// var imageArray = ["_images/water.jpg","_images/fire.jpg","_images/earth.jpg"];
+// var imageIndex = 0;
+//
+// function changeImage() {
+//   myImage.setAttribute('src',imageArray[imageIndex]);
+//   imageIndex++;
+//   if (imageIndex >= imageArray.length) {
+//     imageIndex = 0;
+//   }
+// }
+//
+// var intervalHandle = setInterval(changeImage,5000);
